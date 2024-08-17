@@ -16,29 +16,22 @@
             </div>
             
             <form class="formulario">
+                <input id="firstname" name="firstname" placeholder="Nome completo *" type="text" maxlength="25" class="input-text" required>
                 
-                <!-- <label for="firstname"></label> -->
-                <input id="firstname" name="firstname" placeholder="Nome completo *" type="text" maxlength="25" class="input-text">
-                
-                <input id="firstname" name="firstname" placeholder="Email *" type="text" maxlength="25" class="input-text">
+                <input id="firstname" name="firstname" placeholder="Email *" type="text" maxlength="25" class="input-text" required>
                
-                <input placeholder="Telefone *" type="text" maxlength="25" class="input-text">
+                <input placeholder="Telefone *" type="text" maxlength="25" class="input-text" required>
                 
-                <textarea placeholder="Mensagem *" name="texto" maxlength="100" class="mensagem"></textarea>
+                <textarea placeholder="Mensagem *" name="texto" maxlength="100" class="mensagem" required></textarea>
                 
-                <p class="obrigatorio">*campos obrigatórios</p>
+                <span class="obrigatorio">*campos obrigatórios</span>
                 
-                <a id="submit" href="#" class="botao">Enviar</a>
+                <button id="submit" href="#" class="botao">Enviar</button>
 
                 <span role="alert" id="nameError" aria-hidden="true"> </span>
-
-            </form>
-            
+            </form> 
         </section>
     </main>
-
-
-
     <script src="./src/js/index.js"></script>
 </body>
 </html>
