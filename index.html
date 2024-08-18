@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./src/css/style.css">
-        <link rel="stylesheet" href="./src/css/reset.css">
-        <title>Quest JS Intermediario</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <title>Quest JS Intermediario</title>
 </head>
+
 <body>
     <main>
         <section class="container">
             <div class="texto">
                 <h1 class="titulo">Ficou com duvida? <br> Nos mande uma mensagem!</h1>
-                <p class="paragrafo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+                <p class="paragrafo">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                    contato em menos de 24h.</p>
             </div>
-            
-            <form class="formulario">
-                <input id="firstname" name="firstname" placeholder="Nome completo *" type="text" maxlength="25" class="input-text" required>
-                
-                <input id="firstname" name="firstname" placeholder="Email *" type="text" maxlength="25" class="input-text" required>
-               
-                <input placeholder="Telefone *" type="text" maxlength="25" class="input-text" required>
-                
-                <textarea placeholder="Mensagem *" name="texto" maxlength="100" class="mensagem" required></textarea>
-                
-                <span class="obrigatorio">*campos obrigatórios</span>
-                
-                <button id="submit" href="#" class="botao">Enviar</button>
 
-                <span role="alert" id="nameError" aria-hidden="true"> </span>
-            </form> 
+            <form class="form" id="form">
+
+                <div class="form-control">
+                    <input maxlength="30" placeholder="Nome completo *" class="input" type="text" id="username"> <br>
+                    <small>Error Message</small>
+                </div>
+    
+                <div class="form-control">
+                    <input maxlength="30" placeholder="Email *" class="input" type="email" id="email"> <br>
+                    <small>Error Message</small>
+                </div>
+    
+                <div class="form-control">
+                    <input maxlength="30" placeholder="Telefone *" class="input" type="text" id="password"> <br>           
+                    <small>Error Message</small>
+                </div>
+    
+                <div class="form-control">
+                    <textarea maxlength="170" placeholder="Mensagem *" class="input mensagem" type="text" id="password-two"></textarea> <br>
+                    <small>Error Message</small>
+                </div>
+
+                <span>*campos obrigatórios</span>
+                <button type="submit" >ENVIAR</button>
+            </form>
         </section>
     </main>
     <script src="./src/js/index.js"></script>
